@@ -1,0 +1,24 @@
+# My tasks That I have completed till now in js
+
+- **Week_01** <br>
+  ✅ data_types <br>
+  ✅ operators <br>
+  ✅ Variables
+- **Week_02** <br>
+  ✅ basic_functions <br>
+  ✅ numbers <br>
+  ✅ strings <br>
+  ✅ conditions
+- **Week_03** <br>
+  ✅ github <br>
+  ✅ loops <br>
+  ✅ 8_ball <br>
+
+- **Week_04** <br>
+  ✅ Basic_DOM_1 <br>
+  ✅ Basic_DOM_2 <br>
+  ✅ Basic_DOM_3 <br>
+  ✅ Basic_DOM_4 <br>
+  ❌ Basic_DOM_5 <br>
+  ❌ Basic_DOM_6 <br>
+  ✅ Basic_DOM_7
