@@ -9,10 +9,14 @@ let msg = document.querySelector("#msg");
 const selectResult = (evt) => {
   price += Number(evt.target.value);
   console.log(price);
+  totalPrice.textContent = `${price}€`;
+  imagetotalPrice.textContent = `${price}€`;
 };
 const toppingResult = (evt) => {
   price += Number(evt.target.value);
   console.log(price);
+  totalPrice.textContent = `${price}€`;
+  imagetotalPrice.textContent = `${price}€`;
 };
 const extraResult = (evt) => {
   price += Number(evt.target.value);
@@ -24,5 +28,5 @@ for (i of topping) {
   i.addEventListener("click", toppingResult);
 }
 for (i of extra) {
-  i.addEventListener("click", extraResult);
+  i.addEventListener("change", extraResult);
 }

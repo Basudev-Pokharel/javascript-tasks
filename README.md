@@ -21,4 +21,6 @@
   ✅ Basic_DOM_4 <br>
   ✅ Basic_DOM_5 <br>
   ✅Basic_DOM_6 <br>
-  ✅ Basic_DOM_7
+  ✅ Basic_DOM_7<br>
+  ✅ ATM Simulator<br>
+  ✅ Pancake_maker
