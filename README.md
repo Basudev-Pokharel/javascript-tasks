@@ -19,6 +19,6 @@
   ✅ Basic_DOM_2 <br>
   ✅ Basic_DOM_3 <br>
   ✅ Basic_DOM_4 <br>
-  ❌ Basic_DOM_5 <br>
-  ❌ Basic_DOM_6 <br>
+  ✅ Basic_DOM_5 <br>
+  ✅Basic_DOM_6 <br>
   ✅ Basic_DOM_7
