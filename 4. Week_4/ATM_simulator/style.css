@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.div-box {
+  width: 80%;
+  background-color: red;
+  padding: 15px;
+  /* display: flex; */
+}
+#balance {
+  text-align: center;
+}
+#deposit,
+#withdraw {
+  padding: 7px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.boxes-input-withdraw {
+  display: flex;
+}
+.input-box,
+.withdraw-box {
+  padding: 10px;
+  flex-basis: 50%;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input-box {
+  background-color: rgba(255, 255, 0, 0.372);
+}
+.withdraw-box {
+  background-color: rgba(0, 128, 0, 0.719);
+}
+.input-box button,
+.withdraw-box button {
+  display: inline-block;
+  width: 100px;
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+p#message {
+  width: 60%;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 10px auto;
+  /* display: inline-block; */
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(7, 237, 41);
+}
+#balance {
+  width: 20%;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 10px auto;
+  /* display: inline-block; */
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(7, 237, 41);
+}
