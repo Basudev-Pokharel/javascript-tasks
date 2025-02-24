@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Liter&display=swap");
-* {
-  font-family: "Liter", serif;
-}
-
 body {
   background-color: #ffffff;
   color: #000000;
@@ -67,31 +62,4 @@ select,
 label {
   display: block;
   margin-top: 10px;
-}
-/* =========================================MY Style begins from here======================================================== */
-.para-max {
-  max-width: 60%;
-  font-size: 14px;
-  color: rgb(13, 136, 207);
-}
-#type {
-  padding: 6px;
-  border: 1px solid orange;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: green;
-}
-.para-max::selection {
-  color: green;
-  background-color: yellow;
-}
-/* input[type="checkbox"] {
-  background-color: red;
-  color: yellow;
-} */
-
-#check {
-  background-color: red;
 }
