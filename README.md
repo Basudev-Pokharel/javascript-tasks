@@ -24,3 +24,13 @@
   ✅ Basic_DOM_7<br>
   ✅ ATM Simulator<br>
   ✅ Pancake_maker
+- **Week_05** <br>
+  ✅ array_01 <br>
+  ✅ array_02 <br>
+  ✅ Prancake_maker2
+- **Week_06** <br>
+  ✅ Object_2 <br>
+  ✅ Object_2 <br>
+  ✅ Little_Zoo <br>
+- **Week_07** <br>
+  ✅ Loading

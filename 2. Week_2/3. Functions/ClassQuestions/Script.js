@@ -73,3 +73,11 @@
 // console.log(findMax(12, 7, 20));
 // console.log(findMax(55, 44, 33));
 // console.log(findMax(3, 7, 4));
+
+//Question no 10
+// function cleanAndTransform(str) {
+//   str = str.trim().toLowerCase();
+//   str.replace("powerful", "amazing");
+//   return str;
+// }
+// console.log(cleanAndTransform("JavaScript is powerful! "));

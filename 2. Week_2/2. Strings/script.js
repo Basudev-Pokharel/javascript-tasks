@@ -64,9 +64,9 @@ let longText = "The quick brown fox jumps over the lazy dog";
 console.log("Sliced text:", longText.slice(4, 20));
 
 //Question no 14
-let description = "Javascript is Fun and powerful!";
+let description = " Javascript is Fun and powerful! ";
 // console.log(description.trim());
-description = description.toLocaleLowerCase();
+description = description.toLowerCase();
 bool = description.includes("fun");
 description = description.replace("powerful", "amazing");
 console.log("Final description: ", description);
