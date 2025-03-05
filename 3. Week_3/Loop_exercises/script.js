@@ -162,7 +162,11 @@
 const createWordPyramid = () => {
   let word = prompt("Enter your word: ");
   for (i = 0; i < word.length; i++) {
-    console.log(word[i]);
+    let str = "";
+    for (let j = 0; j <= i; j++) {
+      str += word[j];
+    }
+    console.log(str);
   }
 };
 createWordPyramid();
