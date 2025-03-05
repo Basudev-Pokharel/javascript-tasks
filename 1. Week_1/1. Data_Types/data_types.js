@@ -15,3 +15,12 @@ let hobbies = ["Playing", "Eating", "Coding"];
 
 console.log(2);
 console.log(name);
+console.log(typeof name);
+console.log(typeof isStudent);
+console.log(typeof hobbies);
+
+const info = {
+  schoolName: "Business College",
+  groupName: 25,
+};
+console.log(typeof info);
