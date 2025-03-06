@@ -1,7 +1,9 @@
-let userInput = prompt("Enter your choice: ");
-console.log(userInput);
+let userInput = document.querySelector("input");
+let button = document.querySelector("button");
+let msg = document.getElementById("msg");
+let img = document.querySelector("img");
+msg.innerText = "";
 
-let randomNum = Math.floor(Math.random() * (8 - 1 + 1) + 1);
 const magic8Ball = (randomNum) => {
   switch (randomNum) {
     case 1:
@@ -15,7 +17,7 @@ const magic8Ball = (randomNum) => {
     case 5:
       return "Yes, but only on Tuesdays.";
     case 6:
-      return "Don’t count on it, buddy!";
+      return "Don't count on it, buddy!";
     case 7:
       return "Sure, why not? Live a little!";
     case 8:
@@ -24,4 +26,15 @@ const magic8Ball = (randomNum) => {
       return "Invalid input, Enter between 1 and 8!";
   }
 };
-alert(`Answer to your question : ${magic8Ball(randomNum)}`);
+let clickCount = 1;
+
+button.addEventListener("click", () => {
+  if (userInput.value === "") {
+    alert("Cannot proceed Empty values");
+  } else {
+    let randomNum = Math.floor(Math.random() * (8 - 1 + 1) + 1);
+    let answer = magic8Ball(randomNum);
+    img.style.transform = "rotate(1.9Turn)";
+    msg.innerText = answer;
+  }
+});
