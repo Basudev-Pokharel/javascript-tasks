@@ -14,14 +14,12 @@ const selectResult = (evt) => {
   price -= previousValue;
   previousValue = Number(evt.target.value);
   price += previousValue;
-  console.log(price);
   totalPrice.textContent = `${price}€`;
   imagetotalPrice.textContent = `${price}€`;
 };
 const toppingResult = (evt) => {
   if (evt.target.checked) {
     price += Number(evt.target.value);
-    console.log(price);
     totalPrice.textContent = `${price}€`;
     imagetotalPrice.textContent = `${price}€`;
   } else {
@@ -33,7 +31,6 @@ const toppingResult = (evt) => {
 const extraResult = (evt) => {
   if (evt.target.checked) {
     price += Number(evt.target.value);
-    console.log(price);
     totalPrice.textContent = `${price}€`;
     imagetotalPrice.textContent = `${price}€`;
   } else {
