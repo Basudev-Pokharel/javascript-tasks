@@ -29,15 +29,10 @@ const changeHandler = (event) => {
     return extra.innerText;
   });
 
-  console.log(toppingSelect);
-
-  // console.log("Topping total: ", toppingsTotal);
-
   const extrasTotal = [...document.querySelectorAll(".extra:checked")].reduce(
     (sum, char) => sum + Number(char.dataset.price),
     0
   );
-  // console.log(extrasTotal);
 
   const radio = Number(
     document.querySelectorAll(".delivery:checked")[0].dataset.price
