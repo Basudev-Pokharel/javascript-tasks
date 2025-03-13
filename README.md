@@ -33,4 +33,11 @@
   ✅ Object_2 <br>
   ✅ Little_Zoo <br>
 - **Week_07** <br>
-  ✅ Loading
+  ✅ LocalStorage_Tasks <br>
+  ✅ JSON_Tasks
+- **Week_08** <br>
+  ✅ Error_Handling <br>
+  ✅ Fault_Finding_Js <br>
+  ✅ Js_Writing_Practices
+- **Week_09** 🏆 <br>
+  🚀 Loading Soon
