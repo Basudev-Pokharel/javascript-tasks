@@ -121,7 +121,19 @@ for (i of movies) {
 Write a function `findOldestCar` that takes an array of car objects and returns the car with the earliest `year`.
 */
 
-function findOldestCar(array) {}
+function findOldestCar(array) {
+  array.sort((a, b) => a.year - b.year);
+  return array[0];
+}
+// let cars = [
+//   { year: 2010 },
+//   { year: 2011 },
+//   { year: 2045 },
+//   { year: 2007 },   ///For testing answers
+//   { year: 2005 },
+// ];
+// console.log(cars);
+console.log(findOldestCar(cars));
 
 /* Task 11
 Define a `userProfiles` array containing objects representing users.

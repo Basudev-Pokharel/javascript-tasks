@@ -272,13 +272,14 @@ let cars = [
   { brand: "Tesla", model: "model3", hp: 28 },
   { brand: "Audi", model: "model1", hp: 30 },
   { brand: "BMW", model: "modelx", hp: 20 },
+  { brand: "Skoda", model: "modelnew", hp: 50 },
+  { brand: "Mercedes", model: "qmatic", hp: 99 },
 ];
-// let max = -Infinity;
+console.log(cars);
+
 function highHp(objarray) {
-  return objarray.reduce((max, char) => {
-    obj = char;
-    return (max = Math.max(max, char.hp));
-  }, -Infinity);
+  objarray.sort((a, b) => a.hp - b.hp);
+  return objarray[objarray.length - 1];
 }
 console.log(highHp(cars));
 
@@ -291,6 +292,11 @@ let airports = [
   { name: "Finair", countruy: "Finland", flightsPerDay: 400 },
   { name: "Dutch AIr", countruy: "Netherland", flightsPerDay: 800 },
   { name: "Belgium air", countruy: "Belgium", flightsPerDay: 900 },
+  { name: "Turkish 1ir", countruy: "Belgium", flightsPerDay: 1200 },
 ];
 
-function highFlight(airports) {}
+function highFlight(airports) {
+  airports.sort((a, b) => a.flightsPerDay - b.flightsPerDay);
+  return airports[airports.length - 1].name;
+}
+console.log(highFlight(airports));
