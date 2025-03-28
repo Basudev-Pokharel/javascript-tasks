@@ -6,7 +6,7 @@ body {
   align-items: center;
   margin: 0;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container {
@@ -14,12 +14,15 @@ body {
   align-items: flex-start;
   justify-content: center;
   width: 100vw;
+  border: 5px solid green;
+  position: relative;
 }
 
 .image-container {
   position: relative;
   flex: 1;
-  min-height: 100vh;
+  max-width: 40vw;
+  height: 100vh;
 }
 
 .image-container img {
@@ -32,6 +35,7 @@ body {
   flex: 1;
   padding: 50px;
   min-height: 100vh;
+  max-width: 50vw;
   overflow-y: auto;
 }
 
@@ -62,4 +66,84 @@ select,
 label {
   display: block;
   margin-top: 10px;
+}
+
+/* //Dashboard Starts from Here */
+.order-here {
+  color: #22222272;
+  margin-bottom: 30px;
+}
+.container {
+  min-width: 50vw;
+  margin: auto;
+  /* border: 4px solid green; */
+  display: flex;
+}
+.box {
+  padding: 15px;
+  min-width: 300px;
+  width: 300px;
+  border: 4px solid green;
+  margin: 10px;
+  position: relative;
+}
+.order-here {
+  margin-top: 40px;
+}
+.order-status {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.order-status p {
+  border-radius: 8px;
+  padding: 4px;
+  background-color: green;
+  color: black;
+}
+#color-status {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(255, 0, 0);
+  animation: statuus 0.3s linear infinite alternate;
+}
+@keyframes statuus {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: scale(1.9);
+  }
+}
+.show-Dashboard {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 40px;
+  border: 4px solid red;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(120, 230, 17, 0.432);
+}
+#hidedashboard {
+  position: fixed;
+  padding: 5px;
+  border-radius: 5px;
+  top: 1%;
+  right: 1%;
+  border: 4px solid red;
+}
+.container-dashboard {
+  border: 4px solid blue;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

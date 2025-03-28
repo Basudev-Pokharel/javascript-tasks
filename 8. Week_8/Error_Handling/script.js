@@ -68,25 +68,15 @@ parseJSON('{"name": "Alice", "age": 25}'); // Should return object
 parseJSON("Invalid JSON text"); // Should log an error and return null
 */
 
-/////////Stuck here
-
 function parseJSON(jsonString) {
-  if (typeof jsonString == "string") {
-    return JSON.parse(jsonString);
-  } else {
-    return null;
+  try {
+    console.log(JSON.parse(jsonString));
+  } catch {
+    console.log("INvalid JSON Format");
   }
 }
-try {
-  console.log(parseJSON("Invalid JSON Text"));
-} catch (err) {
-  console.log("Invalid JSON Text");
-}
-try {
-  console.log(parseJSON('{"name": "Alice", "age": 25}'));
-} catch (err) {
-  console.log("Invalid JSON Text");
-}
+parseJSON('{"name": "Alice", "age": 25}');
+parseJSON("Invalid JSON text");
 
 /* Task 5: Throwing a Custom Error
 /*
@@ -127,11 +117,7 @@ console.log(getUser()); // Should log an error and return null
 */
 
 function saveUser(user) {
-  if (typeof user == "object") {
-    localStorage.setItem("ovjeect", JSON.stringify(user));
-  } else {
-    return null;
-  }
+  localStorage.setItem("ovjeect", JSON.stringify(user));
 }
 
 function getUser() {
@@ -160,24 +146,23 @@ checkProperty({ name: "Bob", age: 30 }, "email"); // Should log "Property not fo
 */
 
 function checkProperty(obj, key) {
-  // return obj[key];
   if (obj[key]) {
     return obj[key];
   } else {
-    return nul;
+    throw new Error("Property not found");
   }
 }
 
 try {
   console.log(checkProperty({ name: "Bob", age: 30 }, "email"));
-} catch {
-  console.log('"Property not found"');
+} catch (err) {
+  console.log(err.message);
 }
 
 try {
   console.log(checkProperty({ name: "Bob", age: 30 }, "name"));
-} catch {
-  console.log('"Property not found"');
+} catch (err) {
+  console.log(err.message);
 }
 // console.log(checkProperty({ name: "Bob", age: 30 }, "email"));
 

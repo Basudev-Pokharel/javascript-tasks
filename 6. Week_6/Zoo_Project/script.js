@@ -15,7 +15,7 @@ function addAnimal() {
     li.innerText = char;
     animalList.appendChild(li);
   });
-  console.log(animalCopy);
+  // console.log(animalCopy);
   animals = [];
 }
 
@@ -42,14 +42,28 @@ function sortAnimalsFunc() {
 }
 sortAnimals.addEventListener("click", sortAnimalsFunc);
 
-//Search when input is activate to related alphabets
-// let searchText = "";
-// let searchAnimal = document.querySelector("#searchAnimal");
-// function searchAnimalFunc(evt) {
-//     searchText += evt.data;
-//     animalCopy.forEach((animal)=>{
-//       if(animal.match(evt.target))
-//     });
-//   //   console.log(searchText);
-// }
-// searchAnimal.addEventListener("input", searchAnimalFunc);
+// Search when input is activate to related alphabets
+let searchText = "";
+let searchAnimal = document.querySelector("#searchAnimal");
+function searchAnimalFunc(evt) {
+  searchText = evt.target.value;
+  if (searchText.trim() != "") {
+    animalCopy.forEach((char) => {
+      animalList.innerHTML = "";
+      let li = document.createElement("li");
+      li.innerText = char;
+      animalList.appendChild(li);
+    });
+  } else {
+    storeAfterSearch();
+  }
+}
+function storeAfterSearch() {
+  animalCopy.forEach((char) => {
+    animalList.innerHTML = "";
+    let li = document.createElement("li");
+    li.innerText = char;
+    animalList.appendChild(li);
+  });
+}
+searchAnimal.addEventListener("input", searchAnimalFunc);

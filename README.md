@@ -40,4 +40,7 @@
   ✅ Fault_Finding_Js <br>
   ✅ Js_Writing_Practices
 - **Week_09** 🏆 <br>
-  🚀 Loading Soon
+  ✅ Asynchronous_JS<br>
+  ✅ Chaining_JS<br>
+  ✅ Destructuring_JS<br>
+  ✅ Sprest_rest_JS
